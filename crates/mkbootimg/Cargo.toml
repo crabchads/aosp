@@ -1,0 +1,15 @@
+[package]
+name = "mkbootimg"
+version = "0.0.1"
+edition = "2021"
+license = "Apache-2.0"
+
+[lib]
+path = "lib.rs"
+
+[dependencies]
+binrw = { version = "0.14.1", default-features = false }
+
+[dev-dependencies]
+clap = { version = "4.5.21", features = ["derive"] }
+binrw = { version = "0.14.1", features = ["std"] }
